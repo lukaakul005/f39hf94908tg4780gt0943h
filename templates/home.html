@@ -1,0 +1,165 @@
+{% extends 'base.html' %}
+
+
+{% block inhead %}
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>VUVID</title>
+	<style type="text/css">
+		body{
+			background-color: black;
+		}
+
+		.moviedisplay {
+		  height: 100%;
+		  padding: 1px;
+	      display: flex;
+	      background-size: contain;
+	      background-position: center;
+		}
+		.grid-item {
+		  padding: 1px;
+
+		  color: white;
+		  height: 346px;
+		  width: 236;
+		}
+		.grid-item:hover {
+		  outline: 0px solid transparent;
+		  padding: 20px 20px;
+		  transition: all 0.2s ease-in-out;
+		}
+
+		.grid-container {
+		  padding-right: 60px;
+		  padding-left: 60px;
+		  padding-top: 100px;
+		  max-width: auto;
+		  margin: 0 auto;
+		  display: grid;
+		  gap: 1rem;
+		}
+
+		@media (min-width: 600px) {
+		  .grid-container {grid-template-columns: repeat(auto-fit, minmax(263px, 1fr)); }
+
+		}
+
+
+		.topnav {
+		  background-color: black;
+		  overflow: hidden;
+		  border-bottom: 1px solid ;
+		}
+		.topnav a {
+		  float: left;
+		  text-align: center;
+		  padding: 10px 12px;
+		  text-decoration: none;
+		  color: #BFBFBF;
+		  font-size: 17px;
+		}
+		.topnav a:hover {
+		  color: white;
+		  font-size: 20px;
+		}
+</style>
+{% endblock %}
+
+
+{% block content %}
+	<div class="topnav">
+		
+		<a href="/"><img class="imglogo" src="{{ url_for('static', filename='images/icons/smol.ico') }}"></a>
+		<a href="home" class="searchbarp">Watch</a>
+		<a href="premium" class="searchbarp">Premium</a>
+		<a href="about" class="searchbarp">About</a>
+		<a href="logout" class="searchbarp">Logout</a>
+	</div>
+	<div style="border-bottom: 1px solid white;"></div>
+
+	<div class="grid-container">
+	  <div class="grid-item">
+	  	<a href="final-space">
+	  		<div class="moviedisplay" style="background-image: url('https://flxt.tmsimg.com/assets/p14974404_b_v8_ag.jpg');"></div>
+	  	</a>
+	  </div>
+	  <div class="grid-item">
+	  	<a href="/rick-and-morty">
+			<div class="moviedisplay" style="background-image: url('https://images.justwatch.com/poster/175781586/s718/rick-and-morty.%7Bformat%7D');">
+	  		</div>
+	  	</a>	
+	  </div>
+
+	  <div class="grid-item">
+	  	<a href="/solar-opposites">
+	  		<div class="moviedisplay" style="background-image: url('https://resizing.flixster.com/czUh7T7EuyZWx-KokX6CTPMsaw0=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vODk1MWM2MDktZDFkZC00ZjZkLWJiMDMtMjgwZTExNzhjMzQwLmpwZw==');"></div>
+	  	</a>
+	  </div>
+	  <div class="grid-item">
+	  	<a href="/disenchantment"></a>
+	  		<div class="moviedisplay" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRjtDwhQOjkSoWUX47Ppn_0NnZ0xiaG7qLNabGcxk8kRerjj0v');"></div>
+	  	</a>
+	  </div>
+
+	  <div class="grid-item">
+	  	<a href="/inside-job">
+	  		<div class="moviedisplay" style="background-image: url('https://flxt.tmsimg.com/assets/p20512489_b_v13_aa.jpg');"></div>
+	  	</a>
+	  </div>
+
+	  <div class="grid-item">
+	  	<a href="/gravity-falls">
+	  		<div class="moviedisplay" style="background-image: url('https://flxt.tmsimg.com/assets/p9248224_b_v9_ax.jpg');"></div>
+	  	</a>
+	  </div>
+	  <div class="grid-item">
+	  	<a href="/paradise-pd">
+	  		<div class="moviedisplay" style="background-image: url('https://m.media-amazon.com/images/M/MV5BMTU2NjgxNTUxMF5BMl5BanBnXkFtZTgwMzM4MjMwNjM@._V1_.jpg');"></div>
+	  	</a>
+	  </div>
+	  <div class="grid-item">
+	  	<a href="/family-guy">
+	  		<div class="moviedisplay" style="background-image: url('https://m.media-amazon.com/images/M/MV5BODEwZjEzMjAtNjQxMy00Yjc4LWFlMDAtYjhjZTAxNDU3OTg3XkEyXkFqcGdeQXVyOTM2NTM4MjA@._V1_.jpg');"></div>
+	  	</a>
+	  </div>
+	  <div class="grid-item">
+	  	<a href="/american-dad"></a>
+	  		<div class="moviedisplay" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLVs9v5fKRi9Bjw8rAG0glUVzn6v1_iLJSDwSpz4H_tj7rmgg8');"></div>
+	  	</a>
+	  </div>
+	  <div class="grid-item">
+	  	<a href="/the-cleveland-show">
+	  		<div class="moviedisplay" style="background-image: url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQD5n7v3K4ljR8BbIvjl_kSWFTvuNHElmFl0bXjxzYUSSv8AP7Q');"></div>
+	  	</a>
+	  </div>
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+{% endblock %}

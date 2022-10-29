@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block inhead %}
+	<style type="text/css">
+		body{
+			background-color: black;
+		}
+		.seasonone {
+			padding: 80px;
+
+		}
+		h4{
+			color: white;
+		}
+		a{
+			padding: 10px;
+		}
+
+
+
+
+
+	</style>
+{% endblock %}
+{% block content %}
+	<div class="topnav">
+		
+		<a href="/"><img class="imglogo" src="{{ url_for('static', filename='images/icons/smol.ico') }}"></a>
+		<a href="home" class="searchbarp">Watch</a>
+		<a href="premium" class="searchbarp">Premium</a>
+		<a href="about" class="searchbarp">About</a>
+		<a href="logout" class="searchbarp">Logout</a>
+	</div>
+	<div style="border-bottom: 1px solid white;"></div>
+
+	<div class="seasonone">
+		<h4>SEASON 1</h4>
+		<div class="s1episodes">
+			<a href="https://drive.google.com/file/d/1_u5nzouNma_aTwjeX1e4yrrLW9h0Eez-/view?usp=share_link">E1: Pilot</a><br />
+			<a href="https://rr2---sn-c0q7lnly.c.drive.google.com/videoplayback?expire=1666992228&ei=JBBcY-G2EtyO_9EPrOGXuAo&ip=89.212.46.154&cp=QVRLWEpfUVJQSVhPOnAzaWdJOS1Vbjd4S3pGNWF6RlZuNEJPSFV6YVpfcWJCWGxNUTh2UnBtN1o&id=12c2914bb09bfb37&itag=18&source=webdrive&requiressl=yes&mh=0Z&mm=32&mn=sn-c0q7lnly&ms=su&mv=m&mvi=2&pl=20&ttl=transient&susc=dr&driveid=1sSxmSpufXif3pClJiSULAlkuNTK8uIly&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=1319.590&lmt=1666896637213770&mt=1666977659&subapp=DRIVE_WEB_FILE_VIEWER&txp=0016224&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRQIgVS-Tje8G2bN0Ct2bK_U54xP3ZFEBRnZCpqWA8ooTXGUCIQDB53jxxm6fc6cltb6hTXAbI0WKx1cNOD-FeENWGpbhEA==&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhAK1nKUzy1PlJ9I_BOK57oS9nOFDdFUCCWoU2xnVrvTI3AiEAyyFSXNcnn2qboFqM6Cd693HbDGk3ZyU2eBWYqb87tro=&cpn=HH2Xow87azycY4-t&c=WEB_EMBEDDED_PLAYER&cver=1.20221026.01.00">E2: Lawnmower Dog</a><br />
+			<a href="https://rr2---sn-c0q7lnse.c.drive.google.com/videoplayback?expire=1666992594&ei=khFcY7_3HMmBjQSuoISQDw&ip=89.212.46.154&cp=QVRLWEpfUVVXRVhPOnAzaWdMNi1Vbjd4S3pGOGh2RlZuNEJPSFhnd1pfcWJCWGxQWDR2UnBtN1o&id=6b3959a670054189&itag=18&source=webdrive&requiressl=yes&mh=ef&mm=32&mn=sn-c0q7lnse&ms=su&mv=m&mvi=2&pl=20&ttl=transient&susc=dr&driveid=1x-33xhUcJb3pjj_jP4P34yYCRMn05yoH&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=1316.989&lmt=1666923889554252&mt=1666977893&subapp=DRIVE_WEB_FILE_VIEWER&txp=0011224&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRgIhAN1IdfhayqMYcQ84ZBHQsPzCdQ3SzOKmf7PCLI47krX_AiEAjZ6OBGG3y81FprlLEUJ8-OAoDc5-bxVp93_u3bkOm8E=&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRQIgWFH5VxqXIu6bM6yeeBgb6wt3PySgySkzEQ3lWgOVWwcCIQCpFxcgkdRObi5-dTLrGooY1bITLpXfl1Nyxs1J8L9WoQ==&cpn=EnMFP_k6fu4ebakz&c=WEB_EMBEDDED_PLAYER&cver=1.20221026.01.00">E3: Anatomy Park</a><br />
+			<a href="https://rr4---sn-c0q7lnly.c.drive.google.com/videoplayback?expire=1666992635&ei=uxFcY-zmLoTQ8wT-uJnwBg&ip=89.212.46.154&cp=QVRLWEpfUVZRRlhPOnAzaWdNMC1Vbjd4S3pGOWJ3RlZuNEJPSFlheFpfcWJCWGxRUjV2UnBtN1o&id=4fbfa33bcaf3c94e&itag=18&source=webdrive&requiressl=yes&mh=SA&mm=32&mn=sn-c0q7lnly&ms=su&mv=m&mvi=4&pl=20&ttl=transient&susc=dr&driveid=1tiupB5LyCOGzxsn5-NSx4VPYk-44ghmf&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=1266.787&lmt=1666976163456024&mt=1666977893&subapp=DRIVE_WEB_FILE_VIEWER&txp=0011224&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRAIgMVnvIkcD_Po2ilrktEm0L8vHTlRYM-WK_C2nss9OI_0CIHHdGUPbgMUFF5wPnBH1WYMjUZPzg-23WYEWrftsG3Zp&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhAN_rv7cCQysCLB0_0KlDCOQH0ZqsSlXsF7Qx-8-4BK26AiEAgFTZb5tkDe_aaoqY6jFUkUykX9dBa7BfhtyIuCPijQk=&cpn=s0KkeOXYmOdM5GRZ&c=WEB_EMBEDDED_PLAYER&cver=1.20221026.01.00">E4: M. Night Shaym-Aliens!</a><br />
+			<a href="https://rr1---sn-c0q7lnz7.c.drive.google.com/videoplayback?expire=1666992671&ei=3xFcY6SvIvWR2LYP_aeKiAU&ip=89.212.46.154&cp=QVRLWEpfUVZVQlhPOnAzaWdNNC1Vbjd4S3pGOWZzRlZuNEJPSFlldFpfcWJCWGxRVjF2UnBtN1o&id=755c304e097ff720&itag=18&source=webdrive&requiressl=yes&mh=zg&mm=32&mn=sn-c0q7lnz7&ms=su&mv=m&mvi=1&pl=20&ttl=transient&susc=dr&driveid=1huTrlkogwJf9e-ahEVe0uJgTpCcD5NF1&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=1271.617&lmt=1666913814782269&mt=1666977893&subapp=DRIVE_WEB_FILE_VIEWER&txp=0011224&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRgIhAJrTwZ4ZZBXEKqce6uh1BOWGCNQK9asyv8H7uapVebVAAiEA1t3-zyFVJWwchP0K6dxYhArRL-6mftfxCUPyj6CiX0k=&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRQIgYKZpCEyZeriYRgEXnlPzijaiwRM13pf2ogumn01GWbQCIQDKY7DUXGWDc2enfT6Kt2qKUjG5e5iUR6uQlNx0oD9pFw==&cpn=czcrFbZgs8oCF2rt&c=WEB_EMBEDDED_PLAYER&cver=1.20221026.01.00">E5: Meeseeks and Destroy</a><br />
+			<a href="https://rr3---sn-c0q7lnsl.c.drive.google.com/videoplayback?expire=1666992722&ei=EhJcY4T2EImG8wTinaeYDg&ip=89.212.46.154&cp=QVRLWEpfUVdQQ1hPOnAzaWdOOS1Vbjd4S3pGMGF0RlZuNEJPSFp6dVpfcWJCWGxSUTJ2UnBtN1o&id=accf8983771323e6&itag=18&source=webdrive&requiressl=yes&mh=rb&mm=32&mn=sn-c0q7lnsl&ms=su&mv=m&mvi=3&pl=20&ttl=transient&susc=dr&driveid=1fnAmADY0nakLCCFMXDqHjpDfpPkdNdaC&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=1291.308&lmt=1666895536664984&mt=1666977893&subapp=DRIVE_WEB_FILE_VIEWER&txp=0016224&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRAIgUXRuFmXXp48kh9htfJ-WWQrQu1NGND2D49AsA4A3cRsCIBRawMxe7W29Uc4teLp34fkEwp6eAopFIECSYuvTwDJM&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRQIhAPQqfcGJmyJNAAQYea_RqXs4jrPrQfoslMrleDaJic9nAiBxsVAVA_2jKv_tpwBP2fo6UaP354IkNcegfN_qDmqm1Q==&cpn=WzKCc9xTseNDBWLk&c=WEB_EMBEDDED_PLAYER&cver=1.20221026.01.00">E6: Rick Potion</a><br />
+			<a href=""></a>E7: Raising Gazorpazorp<br />
+			<a href="https://rr2---sn-c0q7lnz7.c.drive.google.com/videoplayback?expire=1666992796&ei=XBJcY_qUL7iP_tcPsLuFyAo&ip=89.212.46.154&cp=QVRLWEpfUVdXR1hPOnAzaWdONi1Vbjd4S3pGMGh4RlZuNEJPSFpneVpfcWJCWGxSWDZ2UnBtN1o&id=9e9cc9c7c58b03c0&itag=18&source=webdrive&requiressl=yes&mh=C2&mm=32&mn=sn-c0q7lnz7&ms=su&mv=m&mvi=2&pl=20&ttl=transient&susc=dr&driveid=11Ro_iSJeLiLXe51JG8flDc4ayYjDz9kh&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=1336.563&lmt=1666929556244974&mt=1666978135&subapp=DRIVE_WEB_FILE_VIEWER&txp=0011224&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRgIhANtXuJNEMVFCzvEIG9ct_hLwcU4hKXJchxnlucamsM3MAiEAsGkTVw18sC-JxZnxJZhIrMU_oi-JBacEvniRJMDC1r8=&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRAIgVnfg0t4KfdkFFm34AzH43Orr0WtBODAJCGjpjblp9sQCIBypNQndFWTLpH6UbGDq-pBQ9HRK7HgrPGTC2o-r7QnZ&cpn=pyh_aO2T_P18s6_3&c=WEB_EMBEDDED_PLAYER&cver=1.20221026.01.00">E8: Rixty Minutes</a><br />
+			<a href="">E8: Something Ricked</a><br />
+			<a href="https://rr5---sn-c0q7lnz7.c.drive.google.com/videoplayback?expire=1666992846&ei=jhJcY6_5A52U2LYPpNe_iAY&ip=89.212.46.154&cp=QVRLWEpfUVhSR1hPOnAzaWdPMS1Vbjd4S3pGMWN4RlZuNEJPSEFieVpfcWJCWGxTUzZ2UnBtN1o&id=62806f34a35739f2&itag=18&source=webdrive&requiressl=yes&mh=UH&mm=32&mn=sn-c0q7lnz7&ms=su&mv=m&mvi=5&pl=20&ttl=transient&susc=dr&driveid=1xkF7TIwiJulHj-XD-YEBk6g5yQv4SaKp&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=1348.150&lmt=1666897367024294&mt=1666978135&subapp=DRIVE_WEB_FILE_VIEWER&txp=0016224&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRAIgU4rclKzoku51qrZaUCJsRjwDE-h0B_OfvzJicz1tZOQCIHa1-61-PizbbrIO04ak5F2r4YkZvmwRyqki5gHT6NYp&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRQIhAJy9dPzhRbJHDwxsIXDkTBB3V3U-7XkKThA1EbqEm4NOAiAx4QKqLB3TPUzvtXsgLmKuQGv1qbmVdW_0YthmlE4gDw==&cpn=Q4AFmr-gI2HKjp-t&c=WEB_EMBEDDED_PLAYER&cver=1.20221026.01.00">E9: Close Rick-counters of the Rick Kind</a><br />
+			<a href="https://rr2---sn-c0q7lnsl.c.drive.google.com/videoplayback?expire=1666992879&ei=rxJcY9TcLbGU2LYPl-mImAM&ip=89.212.46.154&cp=QVRLWEpfUVhVSlhPOnAzaWdPNC1Vbjd4S3pGMWZhRlZuNEJPSEFlYlpfcWJCWGxTVjl2UnBtN1o&id=de9acbf11783efc3&itag=18&source=webdrive&requiressl=yes&mh=s3&mm=32&mn=sn-c0q7lnsl&ms=su&mv=m&mvi=2&pl=20&ttl=transient&susc=dr&driveid=19tkIBw-SiMAeDhTld3XHnVAj-BBNJt6B&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=1342.438&lmt=1666977071065941&mt=1666978135&subapp=DRIVE_WEB_FILE_VIEWER&txp=0011224&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRQIgWX1oda1ncM31GF8lulzKdCTR10XpKQEiYtGDCF1PyjECIQC10WKZyCvqv7YJnfwdqoUXw9q0vwENHiQZQiMgkF851w==&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRQIgWOxlneiOgBEHuLwmsNK4QVU-Oenm9LNS5_jZYA_ZZKUCIQCABFWTX6UFVkVXnRNAoaFDdNCYD-2MQU0513oU6tXrcg==&cpn=2Nrh6WVB9yeDjhmG&c=WEB_EMBEDDED_PLAYER&cver=1.20221026.01.00">E10: Ricksy Business</a><br />
+		</div>
+
+
+	</div>
+
+{% endblock %}
